@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/reset.css">
+        <title>Document</title>
+        <style>
+            header {
+                width: 100%;
+                height: 64px;
+                background-color: #2C2727;
+                display: flex;
+                margin: 0;
+                align-items: center;
+            }
+            .head_top {
+                display: flex;
+                gap: 16px;
+                margin: 0 0 0 260px;
+            }
+            .head_top a {
+                font-size: 13px;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+            }
+            /*로그인 버튼*/
+            .buttons {
+    margin-left: 800px;
+    text-align: center;
+}
+.btn-hover > a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-hover {
+    width: 100px;
+    cursor: pointer;
+    margin: 20px;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.login{
+    background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+.btn-hover.password {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+            /*로그인 버튼 */
+            header > .reg {
+                width: 60px;
+                height: 30px;
+                background-color: #dd7d7d;
+                border-radius: 10px;
+                text-align: center;
+                align-content: center;
+                margin-left: 20px;
+            }
+            .reg > a {
+                color: #000000;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .bar {
+                width: 100%;
+                height: 130px;
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: left;
+            }
+            .logo {
+                width: 130px;
+                height: 130px;
+                margin: -120px 100px 0 500px;
+            }
+            .logo > img {
+                width: 250px;
+                height: 250px;
+            }
+            .menu {
+                display: flex;
+                gap: 50px;
+            }
+            .menu a {
+                font-size: 16px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+            }
+            /*헤더*/
+            .sidebar {
+                display: flex;
+                flex-direction: column;
+                width: 100px;
+                height: 200px;
+                background-color: #2C2727;
+                border: rgb(138, 186, 248) solid 5px;
+                border-radius: 20px;
+                margin-left: 1700px;
+                margin-top: -500px;
+                text-align: center;
+                justify-content: center;
+                position: fixed;
+                gap: 15px;
+            }
+            .sidebar > a {
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            .sidebar > img {
+                border-color: #ffffff;
+            }
+            main {
+                min-height: calc(100vh - 120px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .main_img {
+                width: 100%;
+                height: 500px;
+                background-image: url(/logo/움직이는이미지.gif);
+                background-size: cover;
+                background-position: center;
+                margin-bottom: 100px;
+            }
+            .body_img {
+                width: 100%;
+                height: 600px;
+                background-image: url(/logo/움직이는이미지2.gif);
+                background-size: cover;
+                background-position: center;
+                margin-bottom: 100px;
+            }
+            /*best items (*/
+            .Best_bar {
+                display: flex;
+                gap: 20px;
+            }
+            .best_box {
+                display: flex;
+                width: 300px;
+                height: 300px;
+                background-color: #D9D9D9;
+                border-radius: 20px;
+                border: #000000 solid 3px;
+            }
+            #p1 {
+                color: #000000;
+                font-size: 24px;
+                font-weight: bold;
+                margin: 50px 0;
+            }
+            .best1 {
+                text-align: center;
+                color: #000000;
+                font-weight: bold;
+            }
+            /*best items )*/
+            .nextbar {
+                margin-top: 100px;
+            }
+            /*New items (*/
+            .New_bar {
+                display: flex;
+                gap: 20px;
+            }
+            .New_box {
+                display: flex;
+                width: 300px;
+                height: 400px;
+                background-color: #a36f6f;
+                border-radius: 20px;
+                border: #000000 solid 3px;
+                margin: 20px;
+            }
+            .New1 {
+                text-align: center;
+                color: #000000;
+                font-weight: bold;
+            }
+            /*look book (*/
+            .look_con {
+                border: #000000 2px solid;
+                width: 250px;
+                height: 350px;
+            }
+            .look_bar {
+                display: flex;
+                gap: 50px;
+            }
+            .look_box {
+                display: flex;
+                width: 200px;
+                height: 250px;
+                background-color: #b1b1b1;
+                border-radius: 20px;
+                border: #000000 solid 3px;
+                margin: 20px;
+            }
+            .look1 {
+                display: flex;
+                text-align: center;
+                color: #000000;
+                font-weight: bold;
+                align-items: center;
+                gap: 60px;
+            }
+.photo {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 9999px;
+    border: 2px black solid;
+    margin-left: 15px;
+}
+
+            /*메인*/
+            footer {
+                width: 100%;
+                height: 60px;
+                background-color: #2C2727;
+                margin-top: 120px;
+                color: #ffffff;
+                font-size: 14px;
+            }
+            /*푸터*/
+        </style>
+        <body>
+            <header>
+                <div class="head_top">
+                    <div class="Q_a">
+                        <a href="/Zreview.html">Q&a</a>
+                    </div>
+                    <div class="mypage">
+                        <a href="#">마이페이지</a>
+                    </div>
+                    <div class="mypage2">
+                        <a href="#">관심</a>
+                    </div>
+                    <div class="bell">
+                        <a href="#">알림</a>
+                    </div>
+                    <div class="deliver">
+                        <a href="#">배송조회</a>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="btn-hover login"><a href="/zlogin.html">로그인</a></button>
+                    <button class="btn-hover password"><a href="/zlogin4.html">회원가입</a></button>
+                    </div>
+
+            </header>
+            <div class="bar">
+                <div class="logo">
+                    <img src="./logo/logo.png"></div>
+                <div class="menu">
+                    <div class="home">
+                        <a href="/zmain.html">Home</a>
+                    </div>
+                    <div class="best">
+                        <a href="#">Best</a>
+                    </div>
+                    <div class="New">
+                        <a href="#">New</a>
+                    </div>
+                    <div class="Outer">
+                        <a href="#">Outer</a>
+                    </div>
+                    <div class="Top">
+                        <a href="#">Top</a>
+                    </div>
+                    <div class="Pants">
+                        <a href="#">Pants</a>
+                    </div>
+                    <div class="Set">
+                        <a href="#">Set</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 헤더 -->
+            <div class="main_img"></div>
+            <!-- 메인이미지-->
+            <div class="sidebar">
+                <a href="#"><img src="/logo/화살표위.png"></a>
+                <a href="/Zreview.html">Q&a</a>
+                <a href="#">마이페이지</a>
+                <a href="#">관심</a>
+                <a href="#">알림</a>
+                <a href="#">배송조회</a>
+                <a href="#"><img src="/logo/화살표아래.png"></a>
+            </div>
+
+            <!-- 사이드바-->
+            <main>
+                <img src="/logo/bar.png">
+                <p id="p1">Weekly Best Items</p>
+                <div class="Best_bar">
+                    <div class="Best_con">
+                        <div class="best_box"></div>
+                        <div class="best1">Best 1</div>
+                    </div>
+                    <div class="Best_con">
+                        <div class="best_box"></div>
+                        <div class="best1">Best 2</div>
+                    </div>
+                    <div class="Best_con">
+                        <div class="best_box"></div>
+                        <div class="best1">Best 3</div>
+                    </div>
+                    <div class="Best_con">
+                        <div class="best_box"></div>
+                        <div class="best1">Best 4</div>
+                    </div>
+                </div>
+                <!--베스트 아이템-->
+                <div class="nextbar">
+                    <img src="/logo/bar.png"></div>
+                <p id="p1">New Items</p>
+
+                <div class="New_bar">
+                    <div class="New_con">
+                        <div class="New_box"></div>
+                        <div class="New1">New1</div>
+                        </div>
+                        <div class="New_con">
+                        <div class="New_box"></div>
+                        <div class="New1">New2</div>
+                        </div>
+                        <div class="New_con">
+                        <div class="New_box"></div>
+                        <div class="New1">New3</div>
+                    </div>
+                </div>
+
+                <div class="New_bar">
+                    <div class="New_con">
+                        <div class="New_box"></div>
+                        <div class="New1">New4</div>
+                        </div>
+                        <div class="New_con">
+                        <div class="New_box"></div>
+                        <div class="New1">New5</div>
+                        </div>
+                        <div class="New_con">
+                        <div class="New_box"></div>
+                        <div class="New1">New6</div>
+                    </div>
+                </div>
+
+                <div class="nextbar">
+                    <img src="/logo/bar.png"></div>
+                <p id="p1">Look Book</p>
+
+                <div class="look_bar">
+                    <div class="look_con">
+                        <div class="look_box"></div>
+                        <div class="look1">
+                            <div class="photo"></div>
+                            <a href="#">이름</a>
+                            <img src="/logo/하트.png">
+                        </div>
+                        </div>
+
+                        <div class="look_con">
+                        <div class="look_box"></div>
+                        <div class="look1"><div class="photo"></div>
+                        <a href="#">이름</a>
+                        <img src="/logo/하트.png"></div>
+                        </div>
+
+                        <div class="look_con">
+                        <div class="look_box"></div>
+                        <div class="look1"><div class="photo"></div>
+                        <a href="#">이름</a>
+                        <img src="/logo/하트.png"></div>
+                    </div>
+
+                    <div class="look_con">
+                        <div class="look_box"></div>
+                        <div class="look1"><div class="photo"></div>
+                        <a href="#">이름</a>
+                        <img src="/logo/하트.png"></div>
+                    </div>
+
+                    <div class="look_con">
+                        <div class="look_box"></div>
+                        <div class="look1"><div class="photo"></div>
+                        <a href="#">이름</a>
+                        <img src="/logo/하트.png"></div>
+                    </div>
+
+                    <div class="look_con">
+                        <div class="look_box"></div>
+                        <div class="look1"><div class="photo"></div>
+                            <a href="#">이름</a>
+                            <img src="/logo/하트.png"></div>
+                    </div>
+                </div>
+<!--룩북-->
+<div class="nextbar">
+    <img src="/logo/bar.png"></div>
+<div class="body_img"></div>
+
+            </main>
+            <!-- 메인 -->
+            <footer></footer>
+        </head>
+    </body>
+</html>

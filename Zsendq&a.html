@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/reset.css">
+        <title>Document</title>
+        <style>
+            header {
+        width: 100%;
+        height: 64px;
+        background-color: #2C2727;
+        display: flex;
+        margin: 0;
+        align-items: center;
+    }
+    .head_top {
+        display: flex;
+        gap: 16px;
+        margin: 0 0 0 260px;
+    }
+    .head_top a {
+        font-size: 13px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+    /*로그인 버튼*/
+    .buttons {
+margin-left: 800px;
+text-align: center;
+}
+.btn-hover > a {
+font-size: 16px;
+font-weight: bold;
+color: #fff;
+text-decoration: none;
+}
+.btn-hover {
+width: 100px;
+cursor: pointer;
+margin: 20px;
+height: 40px;
+text-align:center;
+border: none;
+background-size: 300% 100%;
+
+border-radius: 50px;
+-o-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+background-position: 100% 0;
+-o-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+outline: none;
+}
+.btn-hover.login{
+background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+.btn-hover.password {
+background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+    /*로그인 버튼 */
+    header > .reg {
+        width: 60px;
+        height: 30px;
+        background-color: #dd7d7d;
+        border-radius: 10px;
+        text-align: center;
+        align-content: center;
+        margin-left: 20px;
+    }
+    .reg > a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .bar {
+        width: 100%;
+        height: 130px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+    }
+    .logo {
+        width: 130px;
+        height: 130px;
+        margin: -120px 100px 0 500px;
+    }
+    .logo > img {
+        width: 250px;
+        height: 250px;
+    }
+    .menu {
+        display: flex;
+        gap: 50px;
+    }
+    .menu a {
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+    }
+    /*헤더*/
+
+            main {
+                min-height: calc(100vh - 120px);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            /*로고*/
+            .review {
+display: flex;
+width: 1000px;
+height: 100px;
+justify-content: space-between;
+align-items: flex-end;
+            }
+            .review > .menu {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+           .menu > a{
+            font-size: 16px;
+                text-decoration: none;
+                color: #757679;
+            }
+            .menu > a:last-child {
+            font-size: 16px;
+            font-weight: bold;
+            }
+               .review > .serch {
+                display: flex;
+                gap: 20px;
+            }
+            .serch > a {
+                width: 60px;
+                height: 30px;
+                background-color: #484A4D;
+color : white;
+text-align: center;
+align-content: center;
+text-decoration: none;
+            }
+            /*게시판*/
+            .board_list {
+                display: flex;
+                flex-direction: column;
+width: 1000px;
+height: 600px;
+border: #757679 1px solid;
+            }
+      .board_head {
+        display: flex;
+        flex-direction: row;
+            width: 1000px;
+            height: 30px;
+            text-align: center;
+            align-items: center;
+            color: #484A4D;
+            font-size: 15px;
+            font-weight: bold;
+            border: #757679 1px solid;
+        }
+.rtype {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    align-items: center;
+}
+.rtype > input {
+    width: 200px;
+}
+.title {
+    display: flex;
+    width: 700px;
+    height: 30px;
+    align-items: center;
+}
+.title > input {
+    width: 700px;
+}
+/**/
+.board_body {
+    display: flex;
+        flex-direction: row;
+            width: 1000px;
+            height: 30px;
+            text-align: center;
+            align-items: center;
+            color: #484A4D;
+            font-size: 15px;
+            font-weight: bold;
+            border: #757679 1px solid;
+}
+.id {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    align-items: center;
+}
+.id > input {
+    width: 200px;
+}
+/**/
+.board_foot {
+    display: flex;
+        flex-direction: row;
+            width: 1000px;
+            height: 30px;
+            text-align: center;
+            align-items: center;
+            color: #484A4D;
+            font-size: 15px;
+            font-weight: bold;
+            border: #757679 1px solid;
+            border-bottom: 2px #757679 solid;
+}
+p {
+    width: 100px;
+    height: 30px;
+    border: #757679 1px solid;
+}
+
+input {
+    border: none;
+}
+.write {
+    width: 992px;
+    height: 400px;
+    background-color: #D9D9D9;
+    border: #000000 2px solid;
+    resize: none;
+    color: #484A4D;
+    font-weight: bold;
+}
+.answer > textarea {
+    width: 992px;
+    height: 100px;
+    background-color: #D9D9D9;
+    border: #000000 2px solid;
+    resize: none;
+    color: #484A4D;
+    font-weight: bold;
+}
+.list {
+    width: 70px;
+    height: 40px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+}
+.back , .next {
+    width: 70px;
+    height: 40px;
+    background-color: #2C2727;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+}
+.board_list > .bln {
+    display: flex;
+    margin: 20px auto 0px auto;
+    gap: 20px;
+}
+.icon {
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;    
+}
+.icon > img {
+    width: 15px;
+    height: 15px;
+    
+}
+.icon > a {
+    color: rgb(236, 50, 50);
+    text-decoration: none;
+    margin: 0px 20px 0px 0px;
+}
+            /*게시판*/
+            /*메인*/
+            footer {
+                width: 100%;
+                height: 60px;
+                background-color: #2C2727;
+                margin-top: 120px;
+                color: #ffffff;
+                font-size: 14px;
+            }
+            /*푸터*/
+        </style>
+<body>
+    <header>
+        <div class="head_top">
+            <div class="Q_a">
+                <a href="/Zreview.html">Q&a</a>
+            </div>
+            <div class="mypage">
+                <a href="#">마이페이지</a>
+            </div>
+            <div class="mypage2">
+                <a href="#">관심</a>
+            </div>
+            <div class="bell">
+                <a href="#">알림</a>
+            </div>
+            <div class="deliver">
+                <a href="#">배송조회</a>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn-hover login"><a href="/zlogin.html">로그인</a></button>
+            <button class="btn-hover password"><a href="/zlogin4.html">회원가입</a></button>
+            </div>
+
+</header>
+<div class="bar">
+    <div class="logo">
+        <img src="./logo/logo.png"></div>
+    <div class="menu">
+        <div class="home">
+            <a href="/zmain.html">Home</a>
+        </div>
+        <div class="best">
+            <a href="#">Best</a>
+        </div>
+        <div class="New">
+            <a href="#">New</a>
+        </div>
+        <div class="Outer">
+            <a href="#">Outer</a>
+        </div>
+        <div class="Top">
+            <a href="#">Top</a>
+        </div>
+        <div class="Pants">
+            <a href="#">Pants</a>
+        </div>
+        <div class="Set">
+            <a href="#">Set</a>
+        </div>
+    </div>
+</div>
+<!-- 헤더 -->
+            <main>
+                    <div class="review">
+                        <div class="menu">
+                        <a href="#">NOTICE</a>
+                        <a href="#">Q&A</a>
+                        <a href="#">▶REVIEW</a>
+                    </div>
+                    </div>
+                    <div class="line"></div>
+
+             <div class="board_list">
+                <div class="board_head">
+                    <div class="rtype"><p>문의유형</p>Outer</div>
+                </div>
+                <div class="board_body">
+                    <div class="title"><p>제목</p>바람막이 상품에 대해..</div>
+                </div>
+                <div class="board_foot">
+                    <div class="id"><p>아이디</p>나피리</div>
+                </div>
+                <div class="write">이제품은 지퍼가 투웨이 지퍼 인가요?</textarea>
+                </div>
+                <div class="answer"><textarea placeholder="답변"></textarea>
+                </div>
+                <div class="icon">
+                    <img src="/logo/edit.png"><a href="/Zsendedit.html">Edit</a>
+                    <img src="/logo/쓰래기.png"><a href="#">Delete</a>
+                </div>
+                <div class="bln">
+                <a href="/Zreview.html" class="back">Back</a>
+                <a href="/Zreview.html" class="list">List</a>
+                <a href="/Zreview.html" class="next">Next</a>
+            </div>
+             </div>
+            </main>
+            <!-- 메인 -->
+            <footer></footer>
+        </head>
+    </body>
+</html>

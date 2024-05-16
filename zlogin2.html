@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <title>Document</title>
+    <style>
+          header {
+                width: 100%;
+                height: 64px;
+                background-color: #2C2727;
+                display: flex;
+                margin: 0;
+                align-items: center;
+            }
+            .he1 > a {
+                font-size: 24px;
+                font-weight: bold;
+                color: white;
+                margin: 17px 0 18px;
+                text-decoration: none;
+            }
+            header > img {
+                margin: 20px 0 18px 380px;
+            }
+            /*헤더*/
+            
+
+            main {
+                min-height: calc(100vh - 120px);
+                display: flex;
+            }
+        .login_con {
+            width: 400px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            background-color: #ffffffbd;
+            text-align: center;
+            align-items: center;
+            gap: 70px;
+            margin-top: 200px;
+            margin-left: 500px;
+        }
+        .login_con > p {
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+        }
+        input {
+            width: 350px;
+            height: 50px;
+            background-color: white;
+            border-radius: 20px;
+            border: 0px white(0, 0, 0);
+        }
+        .button {
+            width: 350px;
+            height: 50px;
+            background-color: rgb(33, 116, 224);
+            border-radius: 20px;
+            border: 0px white;
+            color: white;
+            text-decoration: none;
+            align-content: center;
+        }
+        .loginmn {
+            display: flex;
+            gap: 70px;
+        }
+        .loginmn > a{
+            text-decoration: none;
+            color: black;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .fnln {
+            display: flex;
+            gap: 35px;
+        }
+        .fn > input {
+            width: 150px;
+            height: 50px;
+        }
+        .ln > input {
+            width: 150px;
+            height: 50px;
+        }
+        main > .gray {
+                background-image: url(/logo/구름.gif);
+                background-position: center;
+                background-size: cover;
+                width: 600px;
+                height: 500px;
+                border: 2px solid black;
+                border-radius: 20px;
+                margin-top: 200px;
+            }
+
+
+        footer {
+                width: 100%;
+                height: 60px;
+                background-color: #2C2727;
+                margin-top: 120px;
+                color: #ffffff;
+                font-size: 14px;
+            }
+            /*푸터*/
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/logo/Shop.png">
+        <div class="he1"><a href="/Zmain.html">4Go</a></div>
+    </header>
+    <!-- 헤더 -->
+
+    <main>
+    <div class="login_con">
+        <p>Find id</p>
+        <div class="fnln">
+        <div class="fn"><input type="text" placeholder="First Name"></div>
+        <div class="ln"><input type="text" placeholder="Last Name"></div>
+    </div>
+    <div class="email"><input type="text" placeholder="Email"></div>
+        <a href="/zmain.html" class="button">Find Me</a>
+    </div>
+
+    <div class="gray"></div>
+    <!--로그인창-->
+</main>
+<footer></footer>
+</body>
+</html>
